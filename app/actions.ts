@@ -27,12 +27,12 @@ type StatusResponse = {
 const API_BASE = "https://api-teste-003.up.railway.app"
 
 async function getInstanciaAtual() {
-  const res = await fetch(`${API_BASE}/api/instancia`)
+  const res = await fetch(`${API_BASE}/api/instancia2`)
   return res.json() // { id, token }
 }
 
 async function avancarInstancia() {
-  const res = await fetch(`${API_BASE}/api/instancia/next`, {
+  const res = await fetch(`${API_BASE}/api/instancia/next2`, {
     method: "POST",
     headers: { "Content-Type": "application/json" }
   })
