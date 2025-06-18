@@ -32,7 +32,7 @@ async function getInstanciaAtual() {
 }
 
 async function avancarInstancia() {
-  const res = await fetch(`${API_BASE}/api/instancia/next2`, {
+  const res = await fetch(`${API_BASE}/api/instancia2/next`, {
     method: "POST",
     headers: { "Content-Type": "application/json" }
   })
